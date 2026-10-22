@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://dif8ywdu7lcyo"]
+
+[ext_resource type="Script" uid="uid://bd7lmrodjh5sj" path="res://about.gd" id="1_sx25x"]
+[ext_resource type="Texture2D" uid="uid://skehwq6lg8cg" path="res://images/startbg.jpeg" id="2_x5r8a"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_x5r8a"]
+[ext_resource type="Script" path="res://back.gd" id="4_h6umi"]
+[ext_resource type="Texture2D" uid="uid://bjwgx4apxpxu8" path="res://images/backbtn.png" id="4_x5r8a"]
+[ext_resource type="Texture2D" uid="uid://byrbood8awja5" path="res://images/EOS front.png" id="6_x5r8a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k56y8"]
+font = ExtResource("3_x5r8a")
+font_size = 30
+font_color = Color(1, 1, 0.47058824, 1)
+
+[node name="About" type="Node2D" unique_id=384475516]
+script = ExtResource("1_sx25x")
+
+[node name="bg" type="TextureRect" parent="." unique_id=557366576]
+offset_left = 248.0
+offset_right = 896.0
+offset_bottom = 648.0
+texture = ExtResource("2_x5r8a")
+expand_mode = 1
+
+[node name="title" type="Label" parent="." unique_id=1608562867]
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 742.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "About"
+label_settings = SubResource("LabelSettings_k56y8")
+horizontal_alignment = 1
+
+[node name="Information" type="Label" parent="title" unique_id=1306405026]
+layout_mode = 0
+offset_left = -136.0
+offset_top = 104.0
+offset_right = 466.0
+offset_bottom = 341.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Eos, the alien, wanted 
+to explore the human 
+brain and accidentally 
+trapped himself. Help him 
+escape:
+"
+label_settings = SubResource("LabelSettings_k56y8")
+
+[node name="Steps" type="Label" parent="title" unique_id=181462627]
+layout_mode = 0
+offset_left = -136.0
+offset_top = 304.0
+offset_right = 466.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "
+1. Pick any one of the mental 
+struggles listed in the Menu tab.
+
+2. Complete every level successfully 
+to win the game"
+label_settings = SubResource("LabelSettings_k56y8")
+
+[node name="back" type="Button" parent="." unique_id=891417869]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 57.0
+icon = ExtResource("4_x5r8a")
+flat = true
+script = ExtResource("4_h6umi")
+
+[node name="Front" type="TextureRect" parent="." unique_id=621843209]
+offset_left = 736.0
+offset_top = 128.0
+offset_right = 826.0
+offset_bottom = 285.0
+mouse_filter = 0
+texture = ExtResource("6_x5r8a")
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

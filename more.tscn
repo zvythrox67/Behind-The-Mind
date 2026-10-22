@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cli1emrdxrbws"]
+
+[ext_resource type="Texture2D" uid="uid://skehwq6lg8cg" path="res://images/startbg.jpeg" id="1_ps4bi"]
+[ext_resource type="Texture2D" uid="uid://bjwgx4apxpxu8" path="res://images/backbtn.png" id="2_fjo8k"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_fjo8k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3vtjc"]
+font = ExtResource("3_fjo8k")
+font_size = 37
+font_color = Color(1, 1, 0.47058824, 1)
+
+[node name="More" type="Node2D" unique_id=400279360]
+
+[node name="bg" type="TextureRect" parent="." unique_id=377245526]
+offset_left = 248.0
+offset_right = 896.0
+offset_bottom = 648.0
+texture = ExtResource("1_ps4bi")
+expand_mode = 1
+
+[node name="back" type="Button" parent="." unique_id=1658918796]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 57.0
+icon = ExtResource("2_fjo8k")
+flat = true
+
+[node name="title" type="Label" parent="." unique_id=2025941750]
+offset_left = 408.0
+offset_top = 16.0
+offset_right = 739.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Menu"
+label_settings = SubResource("LabelSettings_3vtjc")
+horizontal_alignment = 1

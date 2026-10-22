@@ -1,25 +1,26 @@
 [gd_scene format=3 uid="uid://lcbajferuoyf"]
 
-[ext_resource type="Script" uid="uid://co5scnltsx4go" path="res://free_play_menu.gd" id="1_rn4jh"]
-[ext_resource type="Texture2D" path="res://startbg.jpeg" id="2_xuo5d"]
-[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_pe32h"]
-[ext_resource type="Texture2D" path="res://backbtn.png" id="4_gnvty"]
-[ext_resource type="Texture2D" path="res://startbtn.png" id="5_3nn6t"]
-[ext_resource type="Texture2D" path="res://startmore.png" id="6_h2a02"]
+[ext_resource type="Script" uid="uid://co5scnltsx4go" path="res://free_play_menu.gd" id="1_dbyfa"]
+[ext_resource type="Texture2D" uid="uid://skehwq6lg8cg" path="res://images/startbg.jpeg" id="2_yq5vt"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_3nrdy"]
+[ext_resource type="Texture2D" uid="uid://bjwgx4apxpxu8" path="res://images/backbtn.png" id="4_f4ti0"]
+[ext_resource type="Texture2D" uid="uid://b5a2bc1s6srsq" path="res://images/startbtn.png" id="5_j6jsj"]
+[ext_resource type="Texture2D" path="res://startmore.png" id="6_yq5vt"]
+[ext_resource type="Texture2D" uid="uid://d4h4doegvgemd" path="res://images/startmore.png" id="7_3nrdy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_iphtk"]
-font = ExtResource("3_pe32h")
+font = ExtResource("3_3nrdy")
 font_size = 37
 font_color = Color(1, 1, 0.47058824, 1)
 
 [node name="FreePlayMenu" type="Node2D" unique_id=1056206794]
-script = ExtResource("1_rn4jh")
+script = ExtResource("1_dbyfa")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2061130020]
+[node name="bg" type="TextureRect" parent="." unique_id=2061130020]
 offset_left = 248.0
 offset_right = 896.0
 offset_bottom = 648.0
-texture = ExtResource("2_xuo5d")
+texture = ExtResource("2_yq5vt")
 expand_mode = 1
 
 [node name="title" type="Label" parent="." unique_id=227946638]
@@ -33,23 +34,12 @@ text = "Menu"
 label_settings = SubResource("LabelSettings_iphtk")
 horizontal_alignment = 1
 
-[node name="about?" type="Label" parent="." unique_id=1483799032]
-offset_left = 792.0
-offset_top = 16.0
-offset_right = 816.0
-offset_bottom = 56.0
-mouse_filter = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 50
-text = "?"
-label_settings = SubResource("LabelSettings_iphtk")
-
 [node name="back" type="Button" parent="." unique_id=1533941760]
 offset_left = 264.0
 offset_top = 16.0
 offset_right = 302.0
 offset_bottom = 57.0
-icon = ExtResource("4_gnvty")
+icon = ExtResource("4_f4ti0")
 flat = true
 
 [node name="Substance Abuse" type="Button" parent="." unique_id=1874928155]
@@ -61,7 +51,7 @@ theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0.63529414, 0.3372549, 1)
 text = "Substance Abuse"
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -74,7 +64,7 @@ theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "General Anxiety Disorder
 "
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -87,7 +77,7 @@ theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "Major Depressive Disorder
 "
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -99,7 +89,7 @@ offset_bottom = 518.0
 theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "Dyslexia"
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -112,7 +102,7 @@ theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "Post-Traumatic Stress Disorder 
 "
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -126,7 +116,7 @@ theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "Panic Disorder
 
 "
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -139,7 +129,7 @@ theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 text = "Body Dysmorphic Disorder
 "
-icon = ExtResource("5_3nn6t")
+icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
@@ -148,8 +138,26 @@ offset_left = 832.0
 offset_top = 16.0
 offset_right = 873.0
 offset_bottom = 64.0
-icon = ExtResource("6_h2a02")
+icon = ExtResource("6_yq5vt")
 flat = true
 
-[connection signal="gui_input" from="about?" to="." method="_on_about_gui_input"]
+[node name="More2" type="Button" parent="." unique_id=1051430797]
+offset_left = 832.0
+offset_top = 16.0
+offset_right = 873.0
+offset_bottom = 64.0
+icon = ExtResource("7_3nrdy")
+flat = true
+
+[node name="about" type="Button" parent="." unique_id=901856665]
+offset_left = 784.0
+offset_top = 8.0
+offset_right = 832.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(1, 1, 0.47058824, 1)
+theme_override_font_sizes/font_size = 37
+text = "?"
+flat = true
+
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="about" to="." method="_on_about_pressed"]
