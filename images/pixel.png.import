@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bekfesupknrpb"
-path="res://.godot/imported/EOS front.png-70090cef0f1d1e8c2cc4192819dc3664.ctex"
+uid="uid://cxsytj2ndla3t"
+path="res://.godot/imported/pixel.png-df6322673738148bc8baa7c4f8dcc033.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EOS front.png"
-dest_files=["res://.godot/imported/EOS front.png-70090cef0f1d1e8c2cc4192819dc3664.ctex"]
+source_file="res://images/pixel.png"
+dest_files=["res://.godot/imported/pixel.png-df6322673738148bc8baa7c4f8dcc033.ctex"]
 
 [params]
 

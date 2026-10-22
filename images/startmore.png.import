@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b47xbt1rm4yy5"
-path="res://.godot/imported/startmore.png-d79146233bc8cef38f76a96eae6505cd.ctex"
+uid="uid://d4h4doegvgemd"
+path="res://.godot/imported/startmore.png-10af6e5164369010dc0c460b6e45b8c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://startmore.png"
-dest_files=["res://.godot/imported/startmore.png-d79146233bc8cef38f76a96eae6505cd.ctex"]
+source_file="res://images/startmore.png"
+dest_files=["res://.godot/imported/startmore.png-10af6e5164369010dc0c460b6e45b8c1.ctex"]
 
 [params]
 

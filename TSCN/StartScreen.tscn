@@ -1,35 +1,35 @@
 [gd_scene format=3 uid="uid://venp4jittpt3"]
 
-[ext_resource type="Texture2D" uid="uid://d0xhm2ifw5dfd" path="res://pixel.png" id="1_s4vtk"]
-[ext_resource type="Script" uid="uid://bmlhoybwpbtx4" path="res://startscreen.gd" id="1_vno1p"]
-[ext_resource type="Texture2D" uid="uid://cyhcgaxfhkdsa" path="res://startbg.jpeg" id="3_gtard"]
-[ext_resource type="Texture2D" uid="uid://d31dy422ffx1k" path="res://startbtn.png" id="4_vuion"]
-[ext_resource type="Texture2D" uid="uid://b47xbt1rm4yy5" path="res://startmore.png" id="5_06rl2"]
-[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://Xolonium-Regular.ttf" id="6_gtard"]
+[ext_resource type="Script" uid="uid://bmlhoybwpbtx4" path="res://startscreen.gd" id="1_2j4qx"]
+[ext_resource type="Texture2D" path="res://pixel.png" id="2_fn257"]
+[ext_resource type="Texture2D" path="res://startbg.jpeg" id="3_v27q0"]
+[ext_resource type="Texture2D" path="res://startbtn.png" id="4_y6c0n"]
+[ext_resource type="Texture2D" path="res://startmore.png" id="5_dqfb4"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="6_es60o"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vno1p"]
-font = ExtResource("6_gtard")
+font = ExtResource("6_es60o")
 font_size = 75
 font_color = Color(1, 1, 0.47058824, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_gtard"]
-font = ExtResource("6_gtard")
+font = ExtResource("6_es60o")
 font_size = 37
 font_color = Color(1, 1, 0.47058824, 1)
 
 [node name="StartScreen" type="Node2D" unique_id=1703827461]
-script = ExtResource("1_vno1p")
+script = ExtResource("1_2j4qx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=892610098]
 position = Vector2(575.99994, 322)
 scale = Vector2(1.0613598, 1.0723684)
-texture = ExtResource("1_s4vtk")
+texture = ExtResource("2_fn257")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1997353799]
 offset_left = 248.0
 offset_right = 896.0
 offset_bottom = 648.0
-texture = ExtResource("3_gtard")
+texture = ExtResource("3_v27q0")
 expand_mode = 1
 
 [node name="Start" type="Button" parent="." unique_id=605847998]
@@ -41,7 +41,7 @@ theme_override_colors/font_color = Color(0.20784314, 0.043137256, 0.30980393, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 theme_override_font_sizes/font_size = 25
 text = "Start"
-icon = ExtResource("4_vuion")
+icon = ExtResource("4_y6c0n")
 flat = true
 icon_alignment = 1
 
@@ -54,7 +54,7 @@ theme_override_colors/font_color = Color(0.20784314, 0.043137256, 0.30980393, 1)
 theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 theme_override_font_sizes/font_size = 25
 text = "Quit"
-icon = ExtResource("4_vuion")
+icon = ExtResource("4_y6c0n")
 flat = true
 icon_alignment = 1
 
@@ -63,7 +63,7 @@ offset_left = 832.0
 offset_top = 16.0
 offset_right = 873.0
 offset_bottom = 64.0
-icon = ExtResource("5_06rl2")
+icon = ExtResource("5_dqfb4")
 flat = true
 
 [node name="title" type="Label" parent="." unique_id=2133099145]

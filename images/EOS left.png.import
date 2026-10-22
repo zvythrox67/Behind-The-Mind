@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d31dy422ffx1k"
-path="res://.godot/imported/startbtn.png-7fa1f5a71b750877048c84ddeceb9f6c.ctex"
+uid="uid://pwicugg1ustx"
+path="res://.godot/imported/EOS left.png-6d425841847b83c97939ba9bcbaf3c69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://startbtn.png"
-dest_files=["res://.godot/imported/startbtn.png-7fa1f5a71b750877048c84ddeceb9f6c.ctex"]
+source_file="res://images/EOS left.png"
+dest_files=["res://.godot/imported/EOS left.png-6d425841847b83c97939ba9bcbaf3c69.ctex"]
 
 [params]
 
