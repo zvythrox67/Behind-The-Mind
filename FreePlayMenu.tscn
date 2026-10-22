@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://lcbajferuoyf"]
+
+[ext_resource type="Script" uid="uid://co5scnltsx4go" path="res://free_play_menu.gd" id="1_dbyfa"]
+[ext_resource type="Texture2D" uid="uid://cyhcgaxfhkdsa" path="res://startbg.jpeg" id="1_ut7tp"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://Xolonium-Regular.ttf" id="2_mf4rh"]
+[ext_resource type="Texture2D" uid="uid://bxdl5ln8mbwso" path="res://backbtn.png" id="3_mf4rh"]
+[ext_resource type="Texture2D" uid="uid://d31dy422ffx1k" path="res://startbtn.png" id="4_iphtk"]
+[ext_resource type="Texture2D" uid="uid://b47xbt1rm4yy5" path="res://startmore.png" id="6_yq5vt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iphtk"]
+font = ExtResource("2_mf4rh")
+font_size = 30
+font_color = Color(1, 1, 0.47058824, 1)
+
+[node name="FreePlayMenu" type="Node2D" unique_id=1056206794]
+script = ExtResource("1_dbyfa")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2061130020]
+offset_left = 248.0
+offset_right = 896.0
+offset_bottom = 648.0
+texture = ExtResource("1_ut7tp")
+expand_mode = 1
+
+[node name="title" type="Label" parent="." unique_id=227946638]
+offset_left = 432.0
+offset_top = 16.0
+offset_right = 750.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Behind The Mind"
+label_settings = SubResource("LabelSettings_iphtk")
+
+[node name="back" type="Button" parent="." unique_id=1533941760]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 57.0
+icon = ExtResource("3_mf4rh")
+flat = true
+
+[node name="Substance Abuse" type="Button" parent="." unique_id=1874928155]
+offset_left = 272.0
+offset_top = 96.0
+offset_right = 612.0
+offset_bottom = 158.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.63529414, 0.3372549, 1)
+text = "Substance Abuse"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="General Anxiety Disorder" type="Button" parent="." unique_id=1777150239]
+offset_left = 280.0
+offset_top = 240.0
+offset_right = 620.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "General Anxiety Disorder
+"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="Major Depressive Disorder" type="Button" parent="." unique_id=327587259]
+offset_left = 288.0
+offset_top = 384.0
+offset_right = 628.0
+offset_bottom = 446.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "Major Depressive Disorder
+"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="Dyslexia" type="Button" parent="." unique_id=636082373]
+offset_left = 536.0
+offset_top = 456.0
+offset_right = 876.0
+offset_bottom = 518.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "Dyslexia"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="Post-Traumatic Stress Disorder (PTSD)" type="Button" parent="." unique_id=1780367561]
+offset_left = 536.0
+offset_top = 168.0
+offset_right = 876.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "PTSD: Post-Traumatic Stress Disorder 
+"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="Panic Disorder" type="Button" parent="." unique_id=1557477254]
+offset_left = 536.0
+offset_top = 312.0
+offset_right = 876.0
+offset_bottom = 374.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "Panic Disorder
+
+"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="Body Dysmorphic Disorder" type="Button" parent="." unique_id=1619752080]
+offset_left = 288.0
+offset_top = 528.0
+offset_right = 628.0
+offset_bottom = 590.0
+theme_override_colors/font_color = Color(0.3882353, 0.10980392, 0.6627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+text = "Body Dysmorphic Disorder
+"
+icon = ExtResource("4_iphtk")
+flat = true
+icon_alignment = 1
+
+[node name="More" type="Button" parent="." unique_id=1499860339]
+offset_left = 832.0
+offset_top = 16.0
+offset_right = 873.0
+offset_bottom = 64.0
+icon = ExtResource("6_yq5vt")
+flat = true
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
