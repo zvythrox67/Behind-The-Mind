@@ -12,6 +12,11 @@ font = ExtResource("6_gtard")
 font_size = 75
 font_color = Color(1, 1, 0.47058824, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_gtard"]
+font = ExtResource("6_gtard")
+font_size = 37
+font_color = Color(1, 1, 0.47058824, 1)
+
 [node name="StartScreen" type="Node2D" unique_id=1703827461]
 script = ExtResource("1_vno1p")
 
@@ -73,5 +78,17 @@ Mind"
 label_settings = SubResource("LabelSettings_vno1p")
 horizontal_alignment = 1
 
+[node name="about?" type="Label" parent="." unique_id=1100800505]
+offset_left = 792.0
+offset_top = 16.0
+offset_right = 816.0
+offset_bottom = 56.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "?"
+label_settings = SubResource("LabelSettings_gtard")
+
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="gui_input" from="about?" to="." method="_on_about_gui_input"]

@@ -9,7 +9,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_iphtk"]
 font = ExtResource("2_mf4rh")
-font_size = 30
+font_size = 37
 font_color = Color(1, 1, 0.47058824, 1)
 
 [node name="FreePlayMenu" type="Node2D" unique_id=1056206794]
@@ -23,13 +23,25 @@ texture = ExtResource("1_ut7tp")
 expand_mode = 1
 
 [node name="title" type="Label" parent="." unique_id=227946638]
-offset_left = 432.0
+offset_left = 408.0
 offset_top = 16.0
-offset_right = 750.0
-offset_bottom = 56.0
+offset_right = 739.0
+offset_bottom = 61.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-text = "Behind The Mind"
+text = "Menu"
+label_settings = SubResource("LabelSettings_iphtk")
+horizontal_alignment = 1
+
+[node name="about?" type="Label" parent="." unique_id=1483799032]
+offset_left = 792.0
+offset_top = 16.0
+offset_right = 816.0
+offset_bottom = 56.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "?"
 label_settings = SubResource("LabelSettings_iphtk")
 
 [node name="back" type="Button" parent="." unique_id=1533941760]
@@ -139,4 +151,5 @@ offset_bottom = 64.0
 icon = ExtResource("6_yq5vt")
 flat = true
 
+[connection signal="gui_input" from="about?" to="." method="_on_about_gui_input"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

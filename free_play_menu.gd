@@ -14,3 +14,8 @@ func _process(delta: float) -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://StartScreen.tscn")
+
+
+func _on_about_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			get_tree().change_scene_to_file("res://aboutscreen.tscn")		

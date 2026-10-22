@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://dif8ywdu7lcyo"]
+
+[ext_resource type="Texture2D" uid="uid://cyhcgaxfhkdsa" path="res://startbg.jpeg" id="1_4q2eq"]
+[ext_resource type="Script" uid="uid://bd7lmrodjh5sj" path="res://about.gd" id="1_sx25x"]
+[ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://Xolonium-Regular.ttf" id="2_pp48r"]
+[ext_resource type="Texture2D" uid="uid://bxdl5ln8mbwso" path="res://backbtn.png" id="3_k56y8"]
+[ext_resource type="Script" uid="uid://bkdgpfjrosady" path="res://back.gd" id="4_h6umi"]
+[ext_resource type="Texture2D" uid="uid://vm25rfjqvijl" path="res://EOS side.png" id="6_7n2fl"]
+[ext_resource type="Texture2D" uid="uid://bekfesupknrpb" path="res://EOS front.png" id="7_qkww8"]
+[ext_resource type="Texture2D" uid="uid://c4n2x3261wii3" path="res://EOS back.png" id="8_j2lv4"]
+[ext_resource type="Texture2D" uid="uid://cru6rd48xqkyw" path="res://EOS left.png" id="9_xdudg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k56y8"]
+font = ExtResource("2_pp48r")
+font_size = 30
+font_color = Color(1, 1, 0.47058824, 1)
+
+[node name="About" type="Node2D" unique_id=384475516]
+script = ExtResource("1_sx25x")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=656429109]
+offset_left = 248.0
+offset_right = 896.0
+offset_bottom = 648.0
+texture = ExtResource("1_4q2eq")
+expand_mode = 1
+
+[node name="title" type="Label" parent="." unique_id=1608562867]
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 742.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "About"
+label_settings = SubResource("LabelSettings_k56y8")
+horizontal_alignment = 1
+
+[node name="Information" type="Label" parent="title" unique_id=1306405026]
+layout_mode = 0
+offset_left = -136.0
+offset_top = 104.0
+offset_right = 466.0
+offset_bottom = 341.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Eos, the alien, wanted 
+to explore the human 
+brain and accidentally 
+trapped himself. Help him 
+escape:
+"
+label_settings = SubResource("LabelSettings_k56y8")
+
+[node name="Steps" type="Label" parent="title" unique_id=181462627]
+layout_mode = 0
+offset_left = -136.0
+offset_top = 304.0
+offset_right = 466.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "
+1. Pick any one of the mental 
+struggles listed in the Menu tab.
+
+2. Complete every level successfully 
+to win the game"
+label_settings = SubResource("LabelSettings_k56y8")
+
+[node name="back" type="Button" parent="." unique_id=891417869]
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 302.0
+offset_bottom = 57.0
+icon = ExtResource("3_k56y8")
+flat = true
+script = ExtResource("4_h6umi")
+
+[node name="Right" type="TextureRect" parent="." unique_id=239590108]
+offset_left = 736.0
+offset_top = 128.0
+offset_right = 826.0
+offset_bottom = 283.0
+mouse_filter = 0
+texture = ExtResource("6_7n2fl")
+
+[node name="Front" type="TextureRect" parent="." unique_id=621843209]
+offset_left = 2208.0
+offset_top = 384.0
+offset_right = 2298.0
+offset_bottom = 539.0
+mouse_filter = 0
+texture = ExtResource("7_qkww8")
+
+[node name="Back" type="TextureRect" parent="." unique_id=732385459]
+offset_left = 2944.0
+offset_top = 512.0
+offset_right = 3034.0
+offset_bottom = 667.0
+mouse_filter = 0
+texture = ExtResource("8_j2lv4")
+
+[node name="Left" type="TextureRect" parent="." unique_id=875203856]
+offset_left = 1472.0
+offset_top = 256.0
+offset_right = 1562.0
+offset_bottom = 411.0
+mouse_filter = 0
+texture = ExtResource("9_xdudg")
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="gui_input" from="Right" to="." method="_on_right_gui_input"]
+[connection signal="gui_input" from="Front" to="." method="_on_front_gui_input"]
+[connection signal="gui_input" from="Back" to="." method="_on_back_gui_input"]
+[connection signal="gui_input" from="Left" to="." method="_on_left_gui_input"]
