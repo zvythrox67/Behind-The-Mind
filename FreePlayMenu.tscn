@@ -5,7 +5,6 @@
 [ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_3nrdy"]
 [ext_resource type="Texture2D" uid="uid://bjwgx4apxpxu8" path="res://images/backbtn.png" id="4_f4ti0"]
 [ext_resource type="Texture2D" uid="uid://b5a2bc1s6srsq" path="res://images/startbtn.png" id="5_j6jsj"]
-[ext_resource type="Texture2D" path="res://startmore.png" id="6_yq5vt"]
 [ext_resource type="Texture2D" uid="uid://d4h4doegvgemd" path="res://images/startmore.png" id="7_3nrdy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_iphtk"]
@@ -133,30 +132,23 @@ icon = ExtResource("5_j6jsj")
 flat = true
 icon_alignment = 1
 
-[node name="More" type="Button" parent="." unique_id=1499860339]
-offset_left = 832.0
-offset_top = 16.0
-offset_right = 873.0
-offset_bottom = 64.0
-icon = ExtResource("6_yq5vt")
-flat = true
-
-[node name="More2" type="Button" parent="." unique_id=1051430797]
-offset_left = 832.0
-offset_top = 16.0
-offset_right = 873.0
-offset_bottom = 64.0
-icon = ExtResource("7_3nrdy")
-flat = true
-
 [node name="about" type="Button" parent="." unique_id=901856665]
 offset_left = 784.0
 offset_top = 8.0
 offset_right = 832.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(1, 1, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 theme_override_font_sizes/font_size = 37
 text = "?"
+flat = true
+
+[node name="More" type="Button" parent="." unique_id=1867769614]
+offset_left = 832.0
+offset_top = 16.0
+offset_right = 873.0
+offset_bottom = 64.0
+icon = ExtResource("7_3nrdy")
 flat = true
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]

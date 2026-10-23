@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cli1emrdxrbws"]
 
+[ext_resource type="Script" uid="uid://60lcmyyh42gl" path="res://more.gd" id="1_o32xp"]
 [ext_resource type="Texture2D" uid="uid://skehwq6lg8cg" path="res://images/startbg.jpeg" id="1_ps4bi"]
 [ext_resource type="Texture2D" uid="uid://bjwgx4apxpxu8" path="res://images/backbtn.png" id="2_fjo8k"]
 [ext_resource type="FontFile" uid="uid://cvnfp72hby4g1" path="res://fonts/Xolonium-Regular.ttf" id="3_fjo8k"]
+[ext_resource type="Texture2D" uid="uid://b5a2bc1s6srsq" path="res://images/startbtn.png" id="4_3vtjc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3vtjc"]
 font = ExtResource("3_fjo8k")
@@ -10,6 +12,7 @@ font_size = 37
 font_color = Color(1, 1, 0.47058824, 1)
 
 [node name="More" type="Node2D" unique_id=400279360]
+script = ExtResource("1_o32xp")
 
 [node name="bg" type="TextureRect" parent="." unique_id=377245526]
 offset_left = 248.0
@@ -33,6 +36,21 @@ offset_right = 739.0
 offset_bottom = 61.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-text = "Menu"
+text = "Settings"
 label_settings = SubResource("LabelSettings_3vtjc")
 horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="." unique_id=267305761]
+offset_left = 408.0
+offset_top = 520.0
+offset_right = 748.0
+offset_bottom = 582.0
+theme_override_colors/font_color = Color(0.20784314, 0.043137256, 0.30980393, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
+theme_override_font_sizes/font_size = 25
+text = "Quit Game"
+icon = ExtResource("4_3vtjc")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

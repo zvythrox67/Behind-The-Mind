@@ -79,10 +79,12 @@ offset_top = 8.0
 offset_right = 832.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(1, 1, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.4, 0.27058825, 1)
 theme_override_font_sizes/font_size = 37
 text = "?"
 flat = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="More" to="." method="_on_more_pressed"]
 [connection signal="pressed" from="about" to="." method="_on_about_pressed"]

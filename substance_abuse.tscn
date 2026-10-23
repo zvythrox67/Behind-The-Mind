@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dqtwvqlysjrge"]
+
+[node name="Substance Abuse" type="Node2D" unique_id=1598352712]
+
+[node name="Asher" type="CharacterBody2D" parent="." unique_id=599858731]
