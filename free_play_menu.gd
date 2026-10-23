@@ -23,3 +23,7 @@ func _on_about_gui_input(event: InputEvent) -> void:
 
 func _on_about_pressed() -> void:
 	get_tree().change_scene_to_file("res://about.tscn")
+
+
+func _on_substance_abuse_pressed() -> void:
+	get_tree().change_scene_to_file("res://substance_abuse.tscn")
