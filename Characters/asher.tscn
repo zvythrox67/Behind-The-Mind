@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://cl3vmptg8ki03"]
+
+[ext_resource type="Texture2D" uid="uid://buyivvy0mly1c" path="res://Characters/asher-sprite.png" id="1_76hta"]
+[ext_resource type="Script" uid="uid://b1r5dihptncih" path="res://Characters/asher.gd" id="1_ffmnq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21ujs"]
+size = Vector2(96, 104)
+
+[sub_resource type="Animation" id="Animation_ffmnq"]
+resource_name = "Asher-down"
+length = 1.0666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.4, 0.53333336, 0.6666667, 0.8, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_8q0dx"]
+resource_name = "Asher-idle"
+length = 1.0666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.4, 0.53333336, 0.6666667, 0.8000001, 0.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2, 2, 2, 2, 2, 2, 2, 2]
+}
+
+[sub_resource type="Animation" id="Animation_f2o17"]
+resource_name = "Asher-left"
+length = 1.0666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.4, 0.53333336, 0.6666667, 0.8000001, 0.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_e45he"]
+resource_name = "Asher-right"
+length = 1.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.03333333, 0.1, 0.23333333, 0.36666667, 0.5, 0.6333333, 0.76666665, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 8, 9, 10, 11]
+}
+
+[sub_resource type="Animation" id="Animation_2a8ey"]
+resource_name = "Asher-up"
+length = 1.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.033333346, 0.099999994, 0.23333333, 0.36666667, 0.49999994, 0.63333327, 0.76666665, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15, 12, 13, 14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_vl3rc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e45he"]
+_data = {
+&"Asher-down": SubResource("Animation_ffmnq"),
+&"Asher-idle": SubResource("Animation_8q0dx"),
+&"Asher-left": SubResource("Animation_f2o17"),
+&"Asher-right": SubResource("Animation_e45he"),
+&"Asher-up": SubResource("Animation_2a8ey"),
+&"RESET": SubResource("Animation_vl3rc")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ffmnq"]
+animation = &"Asher-down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_f2o17"]
+animation = &"Asher-idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8q0dx"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_eihma"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sj55e"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_f2o17"]
+states/Asher-down/node = SubResource("AnimationNodeAnimation_ffmnq")
+states/Asher-down/position = Vector2(505.97775, 100)
+states/Asher-idle/node = SubResource("AnimationNodeAnimation_f2o17")
+states/Asher-idle/position = Vector2(329.97775, 120.666664)
+transitions = ["Start", "Asher-idle", SubResource("AnimationNodeStateMachineTransition_8q0dx"), "Asher-idle", "Asher-down", SubResource("AnimationNodeStateMachineTransition_eihma"), "Asher-down", "Asher-idle", SubResource("AnimationNodeStateMachineTransition_sj55e")]
+graph_offset = Vector2(79.31108, 0)
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_ffmnq"]
+min_space = Vector2(-1, -1.1)
+max_space = Vector2(1, 1.1)
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_f2o17"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vl3rc"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_e45he"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2a8ey"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ffmnq"]
+states/Idle/node = SubResource("AnimationNodeBlendSpace2D_ffmnq")
+states/Idle/position = Vector2(320, 112.641975)
+states/Start/position = Vector2(168.66667, 112.666664)
+states/Walk/node = SubResource("AnimationNodeBlendSpace2D_f2o17")
+states/Walk/position = Vector2(499.33334, 99.333336)
+transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_vl3rc"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_e45he"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_2a8ey")]
+
+[node name="Asher" type="CharacterBody2D" unique_id=566045899]
+motion_mode = 1
+script = ExtResource("1_ffmnq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=115752934]
+texture = ExtResource("1_76hta")
+hframes = 4
+vframes = 4
+frame = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=297756523]
+position = Vector2(0, 52)
+shape = SubResource("RectangleShape2D_21ujs")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1109972935]
+zoom = Vector2(0.75, 0.75)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1328476144]
+root_node = NodePath("../Sprite2D")
+libraries/ = SubResource("AnimationLibrary_e45he")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=1412615933]
+root_node = NodePath("../Sprite2D")
+tree_root = SubResource("AnimationNodeStateMachine_f2o17")
+advance_expression_base_node = NodePath("../AnimationPlayer")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationTree" unique_id=4407787]
+tree_root = SubResource("AnimationNodeStateMachine_ffmnq")
+advance_expression_base_node = NodePath("../AnimationPlayer")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Walk/blend_position = Vector2(0, 0)

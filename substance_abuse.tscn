@@ -1,25 +1,7 @@
 [gd_scene format=3 uid="uid://dqtwvqlysjrge"]
 
-[ext_resource type="Script" uid="uid://5f10lyo2dloe" path="res://asher.gd" id="1_u3jjj"]
-[ext_resource type="Texture2D" uid="uid://buyivvy0mly1c" path="res://Characters/asher-sprite.png" id="2_u3jjj"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8a8k"]
-size = Vector2(48, 37)
+[ext_resource type="PackedScene" uid="uid://cl3vmptg8ki03" path="res://Characters/asher.tscn" id="1_mhibw"]
 
 [node name="Substance Abuse" type="Node2D" unique_id=1598352712]
 
-[node name="Asher" type="CharacterBody2D" parent="." unique_id=599858731]
-position = Vector2(1, -15)
-script = ExtResource("1_u3jjj")
-
-[node name="Sprite2D" type="Sprite2D" parent="Asher" unique_id=523594485]
-position = Vector2(0.00012207031, -7.999939)
-scale = Vector2(0.6103339, 0.60149854)
-texture = ExtResource("2_u3jjj")
-hframes = 4
-vframes = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Asher" unique_id=34651812]
-position = Vector2(0, 42.5)
-shape = SubResource("RectangleShape2D_x8a8k")
-debug_color = Color(0.99607843, 0, 0.13333334, 0.6117647)
+[node name="Asher" parent="." unique_id=566045899 instance=ExtResource("1_mhibw")]
